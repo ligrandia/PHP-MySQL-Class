@@ -1,8 +1,6 @@
 PHP-MySQL-Class
 ===============
 
-Sorry for my bad english ( _ _)
-
 Initialize
 
 <pre>
@@ -26,7 +24,7 @@ try {
 }
 </pre>
 
-Fetch array with binding data (auto escape)
+<h2>Fetch array with binding data (auto escape)</h2>
 <pre>
 $data = array(
 	':sex'	=> 'M',
@@ -64,7 +62,7 @@ array(2) {
 }
 </pre>
 
-Execute query with binding data (auto escape)
+<h2>Execute query with binding data (auto escape)</h2>
 <pre>
 $data = array(
 	':name'	=> 'wing',
@@ -84,7 +82,7 @@ if (! $result) {
 }
 </pre>
 
-Insert row
+<h2>Insert row</h2>
 <pre>
 // insert('table name', $data_array)
 $success = $mysql->insert('user', array(
@@ -95,3 +93,5 @@ $success = $mysql->insert('user', array(
 if (! $success) {
 	echo $mysql->error();
 }
+
+Sorry for my bad english ( _ _)
