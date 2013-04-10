@@ -2,8 +2,8 @@ PHP-MySQL-Class
 ===============
 
 A MySQL class base on PHP mysql,<br />
-Base on mysqli, <a href="https://github.com/ajillion/PHP-MySQLi-Database-Class">MySQLi-Database-Class</a><br />
-Base on PDO, <a href="http://www.doctrine-project.org/projects/dbal.html">DBAL</a>
+If you want a class base on mysqli, check out <a href="https://github.com/ajillion/PHP-MySQLi-Database-Class">MySQLi-Database-Class</a><br />
+If you want a class base on PDO, check out <a href="http://www.doctrine-project.org/projects/dbal.html">DBAL</a>
 
 Initialize
 
