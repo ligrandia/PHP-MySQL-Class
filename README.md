@@ -32,14 +32,7 @@ $data = array(
 	':sex'	=> 'M',
 );
 
-/*
- * $mysql->fetchAll($query, $data = null, $result_type = MYSQL_BOTH)
- * 
- * @param $result_type
- *	MYSQL_ASSOC, MYSQL_NUM or MYSQL_BOTH
- *
- * @return result as array or FALSE on failure.
- */
+// Return result as array or FALSE on failure.
 $result = $mysql->executeQuery('SELECT * FROM user WHERE sex = :sex', $data);
 
 if ($result === false) {
