@@ -1,6 +1,10 @@
 PHP-MySQL-Class
 ===============
 
+A MySQL class base on PHP mysql,<br />
+Base on mysqli, <a href="https://github.com/ajillion/PHP-MySQLi-Database-Class">MySQLi-Database-Class</a><br />
+Base on PDO, <a href="http://www.doctrine-project.org/projects/dbal.html">DBAL</a>
+
 Initialize
 
 <pre>
@@ -93,5 +97,6 @@ $success = $mysql->insert('user', array(
 if (! $success) {
 	echo $mysql->error();
 }
+</pre>
 
-Sorry for my bad english ( _ _)
+Sorry for my bad english, and I don't know how to use git ( _ _)
