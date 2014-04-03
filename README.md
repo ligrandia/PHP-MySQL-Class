@@ -98,5 +98,3 @@ if (! $success) {
 	echo $mysql->error();
 }
 </pre>
-
-Sorry for my bad english, and I don't know how to use git ( _ _)
