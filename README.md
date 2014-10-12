@@ -7,7 +7,7 @@ If you want a class base on PDO, check out <a href="http://www.doctrine-project.
 
 Initialize
 
-<pre>
+``` php
 require_once('MySQL.php');
 
 try {
@@ -15,9 +15,9 @@ try {
 } catch (Exception $e) {
 	error($e->getMessage());
 }
-</pre>
+```
 or
-<pre>
+``` php
 require_once('MySQL.php');
 
 try {
@@ -26,10 +26,10 @@ try {
 } catch (Exception $e) {
 	error($e->getMessage());
 }
-</pre>
+```
 
 <h2>Fetch array with binding data (auto escape)</h2>
-<pre>
+``` php
 $data = array(
 	':sex'	=> 'M',
 );
@@ -43,11 +43,11 @@ if ($result === false) {
 }
 
 var_dump($result);
-</pre>
+```
 
 Output:
 
-<pre>
+``` php
 array(2) {
   [0]=>
   array(2) {
@@ -64,10 +64,10 @@ array(2) {
     string(1) "M"
   }
 }
-</pre>
+```
 
 <h2>Execute query with binding data (auto escape)</h2>
-<pre>
+``` php
 $data = array(
 	':name'	=> 'wing',
 	':sex'	=> 'M',
@@ -84,10 +84,10 @@ if (! $result) {
 	// Failed
 	echo $mysql->error();
 }
-</pre>
+```
 
 <h2>Insert row</h2>
-<pre>
+``` php
 // insert('table name', $data_array)
 $success = $mysql->insert('user', array(
 	'name'	=> 'mika',
@@ -97,4 +97,4 @@ $success = $mysql->insert('user', array(
 if (! $success) {
 	echo $mysql->error();
 }
-</pre>
+```
